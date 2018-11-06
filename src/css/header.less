@@ -1,0 +1,57 @@
+@import "var.less";
+header{
+    .flex(flex,column,center,center);
+    width: 100%;
+    div.nav{
+      .flex(flex,column,center,center);
+      .wh(99%,120px);
+      background: @darkblue;
+      nav{
+        .flex(flex,row,space-around,center);
+        max-width: 1400px;
+        width: 100%;
+        div{
+          .flex(flex,row,space-between,center);
+        }
+        div.logo{
+          margin-left: 25px;
+          img{
+            .wh(55px,55px);
+          }
+          span{
+            margin-left: 25px;
+            .text('Rubik',#ffffff,52px,400,52px,left,uppercase)
+          }
+        }
+        div.search{
+          width: 20%;
+          margin: 25px;
+          input{
+            .text('Rubik',#ffffff,15px,400,15px,left, none);
+            .wh(100%,45px);
+            background: url("../assets/header/searchicon.png");
+            background-position: center;
+            background-position-x: 90%;
+            background-repeat: no-repeat;
+            padding-left: 20px;
+            border: 0.5px solid #fff;
+          }
+        }
+        div.sections{
+          width: 35%;
+          a{
+            .text('Rubik',#ffffff,20px,500,20px,left,none);
+          }
+          a:hover{
+            color: @greeny;
+          }
+        }
+        div.userinfo{
+          width: 15%;
+          img{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }

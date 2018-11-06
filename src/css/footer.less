@@ -1,0 +1,43 @@
+@import "var.less";
+
+
+footer{
+  .flex(flex,row,center,center);
+  .wh(100%,400px);
+    background: @darkblue;
+    article.content{
+      .flex(flex,row,space-between,center);
+      .wh(100%,100%);
+      max-width: 1400px;
+      div{
+        .wh(25%,80%);
+        h2{
+          .text('Rubik',#fff,26px,600,26px,left, none);
+          padding: 15px;
+        }
+        h3{
+          .text('Rubik',#fff,20px,400,20px,left, none);
+          padding: 15px;
+        }
+      }
+      div.footerLogo{
+        .flex(flex,column,space-around,flex-start);
+        height: 60%;
+        margin: 25px;
+        img{
+          width: 50%;
+        }
+        span{
+          color: #fff;
+        }
+        a{
+          .flex(flex,column,center,center);
+          .wh(50%,60px);
+          .text('Rubik',#fff,15px,400,20px,center, none);
+          border: 1px solid #fff;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,22 @@
+@import "var.less"; // Variables and Mixins
+@import "normal.less"; // Margin: 0, Padding: 0
+@import "mediarequests.less"; // Media Request, Responsive
+@import "header.less"; // Header Section
+@import "slider.less"; // Slider section
+@import "blocks.less"; // Blocks Section
+@import "tablet.less"; // Tablet Section
+@import "mac.less"; // Mac Section
+@import "social.less"; // Social section
+@import "footer.less"; // Footer
+@import 'https://fonts.googleapis.com/css?family=Rubik'; // Import font from Google Fonts
+body{
+  margin: auto;
+  .flex(flex,column,center,center);
+}
+
+
+// .wh( WIDTH, HEIGHT ) - Use mixin to set width and height ( 1 line instead 2 )
+// .text(Font-Family,Color,Font-Size,Font-Weight,Line-Height,Text-Align,Text-Transform) -
+// use mixin .text for set default text parameters ( 1 line instead 7 )
+// .flex (Display, Flex-Direction, Justify-Content, Align-Items) - set flex-properties to
+// parent block ( 1 line instead 4 )

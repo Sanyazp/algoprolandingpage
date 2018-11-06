@@ -1,0 +1,47 @@
+@import "var.less";
+section.slider{
+    .flex(flex,row,center,center);
+    .wh(100%,1000px);
+    background: @softblue;
+    article.content{
+      .flex(flex,row,space-between,center);
+      max-width: 1400px;
+      height: 100%;
+      div{
+        .wh(50%,100%);
+      }
+      div.info{
+        .wh(50%,60%);
+        padding: 10px;
+        h2{
+          .text('Rubik',#ffffff,40px,400,40px,left,none);
+          margin-bottom: 45px;
+        }
+        p{
+          .text('Rubik',#000000,25px,400,25px,left,none);
+        }
+        button{
+          .text('Rubik',#000000,32px,400,32px,center,none);
+          .wh(90%,80px);
+          margin-top: 25px;
+          margin-bottom: 25px;
+          border-radius: 50px;
+          background: @greeny;
+          border: 0px;
+        }
+        span{
+          display: block;
+          .text('Rubik',#263855,15px,400,15px,left,none);
+        }
+      }
+  
+      div.slider_img{
+        .wh(50%,100%);
+        background: url('../assets/slider/slider_img.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+  

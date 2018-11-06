@@ -1,0 +1,26 @@
+@import "var.less";
+
+section.blocks{
+  .wh(100%,800px);
+    .flex(flex,row,center,center);
+    article.content{
+      .flex(flex,row,space-around,center);
+      .wh(100%,100%);
+      max-width: 1400px;
+      div{
+        .flex(flex,column,space-between,center);
+        .wh(20%,60%);
+        h1{
+          .text('Rubik',@darkblue,28px,600,28px,center, none);
+        }
+        p{
+          .text('Rubik',#000000,20px,400,20px,center, none);
+        }
+        img{
+          .wh(150px,150px);
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  
